@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="img/logo.svg">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GO</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="img/logo.jpg" alt="логотип">
+        </div>
+        <nav>
+            <h1>
+                Меню
+            </h1>
+            <ul>
+                <li>
+                    <a href="#provocation">Залы</a>
+                </li>
+                <li>
+                    <a href="#about">О нас</a>
+                </li>
+                <li>
+                    <a href="tel:89509302893">Бронь</a>
+                </li>
+                <li>
+                    <a href="#">отзывы</a>
+                </li>
+                <li>
+                    <a href="#contacts">контакты</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <section id="provocation">
+            <h2>
+                У нас есть все для классного отдыха с друзьями!
+            </h2>
+
+            <ul>
+                <li> 
+                    <figure>
+                        <img src="img/vr.jpg" alt="Очки виртуальной реальности">
+                        <figcaption>
+                            VR очки
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="img/audio.jpg" alt="Звук">
+                    <figcaption>
+                        Аудио-система 5.1 с отличным звуком
+                    </figcaption>
+                    </figure>
+                </li>
+                <li>            
+                    <figure>
+                        <img src="img/micro.jpg" alt="Микрофон">
+                        <figcaption>
+                            Караоке (4 микрофона)
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>                
+                    <figure>
+                        <img src="img/game.jpg" alt="Настольные Игры">
+                        <figcaption>
+                            Настольные игры
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="img/netflix.jpg" alt="Netflix">
+                        <figcaption>
+                            Кино сервисы: Netflix, IVI, MegoGo, КиноПоиск, Okko
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>               
+                    <figure>
+                        <img src="img/sony.jpg" alt="PS5">
+                        <figcaption>Play Station 5</figcaption> 
+                    </figure>
+                </li>
+            </ul>
+        </section>
+
+        <section id="OurRooms">
+            <h2>Наши Залы</h2>
+            <ol>
+                            <li>
+                                <a href="/GameRooms/vibes.html">80's vibes</a>
+                            </li>
+                            <li>
+                                <a href="/GameRooms/starwars.html">Star Wars</a>
+                            </li>
+                            <li>
+                                <a href="/GameRooms/wildwest.html">Wild West</a>
+                            </li>
+                            <li>
+                                <a href="/GameRooms/neon.html">Neon Style</a>
+                            </li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>
+                Забронировать зал просто
+            </h2>
+
+            <form action="https://jsonplaceholder.typicode.com/posts"
+            method="post">
+
+                <fieldset>
+                    <legend>Выбери зал</legend>
+                    <input type="radio" name="place" value="80svibes">80's vibes
+                    <input type="radio" name="place" value="StarWars">Star Wars
+                    <input type="radio" name="place" value="WildWest">Wild West
+                    <input type="radio" name="place" value="NeonStyle">Neon Style
+                </fieldset>
+
+                <fieldset>
+                    <legend>Собери набор развлечений</legend>
+                    <fieldset>
+                        <legend>Приставка</legend>
+                        <input type="radio" name="GameConsole" value="PlayStation">PlayStation
+                        <br>
+                        <input type="radio" name="GameConsole" value="SegaMegaDrive">Sega Mega Drive
+                        <br>
+                        <input type="radio" name="GameConsole" value="XBoxOneS ">X-Box One S
+                        <br>
+                        <input type="radio" name="GameConsole" value="Dendy">Dendy
+                    </fieldset>
+                    <fieldset>
+                        <legend>Настольные Игры</legend>
+                        <input type="checkbox" name="BoardGames" value="Jenga">Jenga
+                        <br>
+                        <input type="checkbox" name="BoardGames" value="Monopoly">Monopoly
+                        <br>
+                        <input type="checkbox" name="BoardGames" value="Manchkin">Манчкин
+                        <br>
+                        <input type="checkbox" name="BoardGames" value="Alias">Alias
+                    </fieldset> 
+                    <fieldset>
+                        <legend>Дополнительно</legend>
+                        <input type="checkbox" name="Extra" value="karaoke">Караоке
+                        <br>
+                        <input type="checkbox" name="Extra" value="VR">VR
+                    </fieldset>
+                </fieldset>
+                <fieldset>
+                    <legend>Выбери дату и время</legend>
+                    <label>
+                        Дата*
+                        <input type="date" value="Date" required>
+                    </label>
+                    <label>
+                        Время*
+                        <input type="time" value="Time" required>
+                    </label>
+                    <label>
+                        <br>
+                        Количество Человек*
+                        <input type="number" name="NumberOfPersons" required>
+                    </label>
+                    <label>
+                        <br>
+                        Имя*
+                        <input type="text" name="Name" required>
+                    </label>
+                    <label>
+                        <br>
+                        Фамилия*
+                        <input type="text" name="Surname" required>
+                    </label>
+                    <label>
+                        <br>
+                        Номер Телефона*
+                        <input type="tel" name="Phone" required>
+                    </label>
+                </fieldset>
+                <br>
+                <button>Забронировать</button>
+            </form>
+        </section>
+
+        <section id="about">
+            <h2>О нас</h2>
+
+            <p>
+                Для наших гостей мы создали <i>концептуально новое игровое пространство виртуальной реальности</i>  в центральной части города.
+            </p>
+
+            <p>
+                Каждый день мы стараемся создавать для вас самую лучшую игровую атмосферу и радовать Вас топовыми игровыми разработками со всего мира.
+            </p>
+
+        
+        </section>
+
+        <section>
+            <blockquote>
+
+                <p>
+                    <b>GAME OVER</b>  - это место незабываемых впечатлений
+                </p>            
+            </blockquote>
+
+            <p>
+                <cite>Аркадий Абашкин, создатель игровой территории <strong>GAME OVER</strong></cite>
+            </p>
+            
+        </section>
+
+        <section>
+            <h2>
+                Отзывы посетителей
+            </h2>
+            <article>
+                <img src="#" alt="фото первого человека ">
+                <h3>Макс Самойлов</h3>
+                <p>Отмечали здесь день рождения с компанией друзей,все было очень круто! VR очки это просто бомба, никогда еще я не был в таком полном игровом погружении. Сервис на высоте!</p>
+            </article>
+            <article>
+                <img src="#" alt="фото второго человека">
+                <h3>Оксана Григорьева</h3>
+                <p>Были в комнате Дикий Запад, пели в караоке под Шакиру, отличный получился копроратив! У нас в городе больше нет подобных заведений.</p>
+            </article>
+            <article>
+                <img src="#" alt="фото третьего человека">
+                <h3>Никита Ященко</h3>
+                <p>Немного подвисала игра в VR очках, а так все норм. Крутое оформление комнаты в стиле звездных войн, попал в атмосферу космоса!</p>
+            </article>
+        </section>        
+
+    </main>
+
+    <footer>
+        <section id="contacts">
+            <h2>
+                Контакты
+            </h2>
+            <p>
+                г. Москва ул. Аквамарина, 16
+            </p>
+    
+            <a href="tel:89509302893">8(950)930-28-93</a>
+            <br>
+            <a href="mailto:GameOver@gmail.com">GameOver@gmail.com</a>
+    
+            <ul>
+                <li>
+                    <a href="https://vk.com/digga_man">VK</a>
+                </li>
+                <li>
+                    <a href="https://t.me/CherryCodger">Telegram</a>
+                </li>
+            </ul>
+        </section>
+    </footer>
+
+</body>
+
+</html>
